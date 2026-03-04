@@ -1,5 +1,7 @@
 # Web Application Security Testing Lab
-
+![Security](https://img.shields.io/badge/Type-Security%20Lab-red)
+![Platform](https://img.shields.io/badge/Platform-Kali%20Linux-black)
+![Target](https://img.shields.io/badge/Target-OWASP%20Juice%20Shop-orange)
 This project documents a basic web application security testing exercise performed on OWASP Juice Shop in a controlled lab environment.
 
 ## Objective
