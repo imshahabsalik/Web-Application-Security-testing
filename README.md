@@ -17,24 +17,36 @@ The goal of this exercise was to practice identifying common web vulnerabilities
 
 ## Testing Performed
 
-### Network Scanning
+## Network Scanning
 
-Port scanning was performed using Nmap to identify exposed services.
+Command used:
 
-Command used: nmap -sV -sC -p- localhost
+nmap -sV -sC -p- localhost
 
-### SQL Injection Testing
+Result:
 
-The login form was tested for SQL Injection vulnerabilities.
+PORT     STATE SERVICE
+3000/tcp open  http
 
-Payload used: ' OR 1=1 --
+## SQL Injection Testing
 
-This payload allowed login bypass in the lab environment.
+Payload used:
 
-### XSS Testing
+' OR 1=1 --
 
-Basic XSS payloads were tested but no successful script execution was observed.
+Result: Login bypass was possible in the lab environment.
 
-## Notes
+## Screenshots
 
-All testing was performed on OWASP Juice Shop in a local lab environment created for learning purposes.
+### Nmap Scan
+![Nmap Scan](screenshots/nmap_scan.png)
+
+### SQL Injection Login
+![SQL Injection](screenshots/sql_injection_login.png)
+
+### Admin Access
+![Admin Access](screenshots/admin_access.png)
+
+## Disclaimer
+
+This testing was performed on an intentionally vulnerable application in a local lab environment for learning purposes.
